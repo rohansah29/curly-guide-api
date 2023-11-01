@@ -45,20 +45,6 @@ userRouter.post("/login",async(req,res)=>{
     }
 })
 
-// userRouter.get("/logout",auth,async(req,res)=>{
-//     const token=req.headers.authorization?.split(" ")[1]
-//     try {
-//         if(token){
-//             await BlacklistModel.create({token})
-//             res.status(200).send({msg:"User has been logged out"});
-//         }else{
-//             res.status(400).send({error:error}); 
-//         }
-//     } catch (error) {
-//         res.status(400).send({error:error});
-//     }
-// })
-
 module.exports={
     userRouter
 }
